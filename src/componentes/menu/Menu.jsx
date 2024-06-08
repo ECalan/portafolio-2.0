@@ -1,6 +1,6 @@
 import { useState } from "react";
-import ThemeLight from "./ThemeLight";
 import ThemeDark from "./ThemeDark";
+import ThemeLight from "./ThemeLight";
 import "../menu/Menu.css"
 
 
@@ -10,10 +10,9 @@ const Menu = () => {
     const [value, setValue] = useState(0)
     
     if (value === true) {
-        ThemeLight();
-    
-    }else if (value === false) {
         ThemeDark();
+    }else if (value === false) {
+        ThemeLight();
     }
     return (
         <header className="menu">
@@ -31,7 +30,7 @@ const Menu = () => {
                             <option value="White">Theme White</option>
     </select></a></li>*/}
             <button id="themes"  className="menu__button__themes" onClick={()=> setValue(value === false)}>
-                Theme light
+                Theme Light
             </button> {value}
                 <li className="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
                 <li className="menu__list__item"><a href="#skills">Skills</a></li>
