@@ -58,7 +58,7 @@ header.menu {
 
 .menu__header {
   display: flex;
-  color: gray;
+  color: grey;
 }
 
 .image__header {
@@ -107,24 +107,9 @@ a:hover {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom-color: var(--green-color);
-  color: gray;
-}
-
-.menu__list__themes:hover {
-  color: var(--green-color);
-}
-
-.menu__list__themes:focus {
-  outline: none;
 }
 
 .contacto {
-  font-weight: 700;
-}
-
-.menu__list__item__contacto {
-  display: none;
   font-weight: 700;
 }
 
