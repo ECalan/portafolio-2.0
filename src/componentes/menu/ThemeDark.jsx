@@ -1,5 +1,7 @@
 const ThemeDark =()=>{
     document.querySelector("#themes").innerHTML = "Theme Light";
+    document.querySelector(".menu__header").style = "color: grey;";
+    document.querySelector("a").style = "color: green;";
     document.querySelector(".menu").style= "background-color: #212121;"
     document.querySelector(".title__bio").style = "background-color: #212121;"
     document.querySelector("body").style =
