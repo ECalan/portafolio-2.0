@@ -75,6 +75,16 @@ header.menu {
   flex-direction: column;
 }
 
+/* style definid 1 */
+a.green {
+  color: green;
+}
+
+/* style definid 2 */
+a.black {
+  color: black;
+}
+
 .menu__list {
   display: flex;
   justify-content: space-around;
@@ -89,8 +99,14 @@ header.menu {
   display: flex;
 }
 
+/* hover predeterminate */
 a:hover {
   color: #40ff00ff;
+}
+
+/* hover selective */
+a.green-hover:hover {
+  color: green;
 }
 
 .menu__list__item__icon {
