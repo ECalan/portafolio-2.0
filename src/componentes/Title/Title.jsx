@@ -1,6 +1,5 @@
 import "./Title.css";
 const Title=()=>{ return(
-    <main className = "title__about">
 <section className="title">
         <div className="title__div">
             <img className="title__profile" src="/img/Foto_para_portafolio.jpg" alt="profile" />
@@ -16,7 +15,6 @@ const Title=()=>{ return(
             </div>
         </div>
     </section>
-    </main>
 );
 };
 
