@@ -28,6 +28,7 @@
   padding: 1rem 0;
   font-size: 20px;
   color: var(--contenido-parrafos-color);
+  text-align: justify;
 }
 
 .about__img {
