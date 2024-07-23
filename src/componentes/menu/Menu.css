@@ -136,47 +136,8 @@ a.green-hover:hover {
 
 /*Tablet*/
 @media screen and (max-width: 768px) {
-  .menu_content {
-    width: 60.5%;
-  }
-
-  .menu__list__item {
-    display: none;
-  }
-
-  #menu__list__item__theme {
-    display: flex;
-  }
-
-  .menu__list__item__contacto {
-    display: flex;
-  }
 }
 
 /*Mobile*/
 @media screen and (max-width: 414px) {
-  section.menu {
-    margin-top: 1rem;
-  }
-
-  .menu_content {
-    width: 25%;
-  }
-
-  .image__header {
-    width: 10%;
-    height: 80%;
-  }
-
-  .menu__list_img {
-    padding-right: 0.2rem;
-  }
-
-  #menu__list__item__theme {
-    display: block;
-    position: absolute;
-    top: 2.3rem;
-    left: 7.5rem;
-    width: 10%;
-  }
 }
