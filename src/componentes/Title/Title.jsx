@@ -2,8 +2,8 @@ import "./Title.css";
 const Title=()=>{ return(
 <section className="title">
         <div className="title__div">
-            <img className="title__profile" src="/img/Foto_para_portafolio.jpg" alt="profile" />
             <div className="title__container">
+            <img className="title__profile" src="/img/Foto_para_portafolio.jpg" alt="profile" />
                 <h2 className="title__bio title__biography">Hola, mi nombre es Eddy Calan y construyo paginas web</h2>
                 <h3 className="title__subsection title__biography">Soy orgullosamente Guatemalteco, tengo 34 años de edad, formado en Bachillerato en Computación con Orientación Comercial, futuramente estudiante de Ingenieria en Sistemas y actualmente alumno Alumni One en Oracle ONE en Alura Latam.</h3>
                 <ul className="title__network">
