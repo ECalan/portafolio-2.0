@@ -16,7 +16,6 @@ section.title {
   position: relative;
   width: 24%;
   float: right;
-  margin: 3.4% 0;
   border: 0.5rem solid rgb(46, 184, 0);
   border-radius: 100%;
   z-index: 2;
@@ -160,29 +159,13 @@ section.title {
 /*Tablet*/
 @media screen and (max-width: 768px) {
   .title__bio {
-    padding: 1rem 0;
+    padding: 1rem 2rem;
     font-size: 2rem;
-    font-weight: 700;
   }
 
   .title__subsection {
     padding: 1rem 0;
-    font-size: 1rem;
-  }
-
-  .title__network {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .title__network__item {
-    padding-right: 0;
-  }
-
-  .title__network__item a {
-    display: flex;
-    align-items: end;
-    justify-content: center;
+    font-size: 1.3rem;
   }
 }
 
@@ -198,7 +181,7 @@ section.title {
   .title__profile {
     display: flex;
     width: 50%;
-    margin: 0 4.12rem;
+    margin: 4% 5.2rem;
   }
 
   .title__container {
@@ -208,7 +191,7 @@ section.title {
 
   .title__bio {
     font-size: 22px;
-    padding: 0 1rem;
+    padding: 1rem 1rem;
   }
 
   .title__bio:before {
