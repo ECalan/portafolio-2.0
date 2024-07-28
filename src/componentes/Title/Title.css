@@ -132,6 +132,7 @@ section.title {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  font-weight: bold;
   text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0);
 }
 
