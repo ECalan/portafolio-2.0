@@ -1,5 +1,5 @@
 import Menu from "./componentes/menu/Menu";
-import Title from "./componentes/Title/Title";
+import Title from "./componentes/title/Title";
 import About from "./componentes/about/About";
 import "./App.css";
 
