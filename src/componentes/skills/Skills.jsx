@@ -2,8 +2,8 @@ import "./Skills.css";
 const Skills = () => {
   return (
     <section className="skills" id="skills">
-      <h3 className="skills__title">Skills</h3>
       <div className="skills__container">
+        <h3 className="skills__title">Skills</h3>
         <div className="skills__line" id="skills__all">
           <div className="skills__box">
             <ul className="skills__items">
@@ -11,7 +11,7 @@ const Skills = () => {
                 <img
                   className="skills__all__imgs"
                   src="/img/Html.png"
-                  alt="Html image"
+                  alt="Html"
                 />
               </li>
               <li className="skills__name"> HTML 5</li>
@@ -24,7 +24,7 @@ const Skills = () => {
                 <img
                   className="skills__all__imgs"
                   src="/img/JavaScript.png"
-                  alt="Js image"
+                  alt="JavaScript"
                 />
               </li>
               <li className="skills__name">Javascript</li>
@@ -37,7 +37,7 @@ const Skills = () => {
                 <img
                   className="skills__all__imgs"
                   src="/img/React.png"
-                  alt="React image"
+                  alt="React"
                 />{" "}
               </li>
               <li className="skills__name">React</li>
@@ -50,7 +50,7 @@ const Skills = () => {
                 <img
                   className="skills__all__imgs"
                   src="/img/Css.png"
-                  alt="Css image"
+                  alt="Css"
                 />{" "}
               </li>
               <li className="skills__name">CSS</li>
