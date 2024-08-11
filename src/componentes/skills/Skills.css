@@ -48,4 +48,19 @@
 
 /*Mobile*/
 @media screen and (max-width: 414px) {
+  .skills__container {
+    height: 100%;
+    margin: 0;
+  }
+  .skills__title {
+    padding: 1rem 0 0.5rem;
+  }
+  .skills__box {
+    padding: 1rem 0 0;
+  }
+  .skills__line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
