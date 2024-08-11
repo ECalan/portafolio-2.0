@@ -140,4 +140,10 @@ a.green-hover:hover {
 
 /*Mobile*/
 @media screen and (max-width: 414px) {
+  header.menu {
+    height: 5%;
+  }
+  .menu__list__item {
+    display: none;
+  }
 }
