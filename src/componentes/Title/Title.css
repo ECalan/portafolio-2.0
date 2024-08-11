@@ -175,7 +175,8 @@ section.title {
   .title__div {
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+    padding: 0;
     text-align: center;
   }
 
@@ -192,6 +193,7 @@ section.title {
 
   .title__bio {
     font-size: 22px;
+    margin: 0 1rem;
     padding: 1rem 1rem;
   }
 
@@ -199,12 +201,10 @@ section.title {
     width: 100%;
   }
 
-  .title__network {
-    display: flex;
+  .title__subsection {
+    padding: 1rem;
   }
-
-  .title__network__item a {
-    flex-direction: column-reverse;
-    align-items: center;
+  .title__network__item {
+    padding: 0.2rem;
   }
 }
