@@ -3,6 +3,7 @@ import Title from "./componentes/title/Title";
 import About from "./componentes/about/About";
 import Skills from "./componentes/skills/Skills";
 import Hobbies from "./componentes/hobbies/Hobbies";
+import Academy from "./componentes/academy/Academy";
 import "./App.css";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Skills />
       <Hobbies />
+      <Academy />
     </div>
   );
 }
