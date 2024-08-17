@@ -27,7 +27,11 @@ const About = () => {
             Asiática.{" "}
           </p>
         </div>
-        <img className="about__img" src="/img/Logo_Platinum_Design.png" />
+        <img
+          className="about__img"
+          src="/img/Logo_Platinum_Design.png"
+          alt="Platinum Design"
+        />
       </div>
       <div className="about__container__soft__skills">
         <h3 className="about__title_soft_skills">Soft Skills</h3>
