@@ -75,6 +75,7 @@ const Hobbies = () => {
             <ul className="hobbies__items">
               <li className="hobbies__img">
                 <svg
+                  className="hobbies__svg"
                   xmlns="http://www.w3.org/2000/svg"
                   width={104}
                   height={104}
@@ -93,6 +94,7 @@ const Hobbies = () => {
             <ul className="hobbies__items">
               <li className="hobbies__img">
                 <svg
+                  className="hobbies__svg"
                   xmlns="http://www.w3.org/2000/svg"
                   width={104}
                   height={104}
@@ -115,6 +117,7 @@ const Hobbies = () => {
             <ul className="hobbies__items">
               <li className="hobbies__img">
                 <svg
+                  className="hobbies__svg"
                   xmlns="http://www.w3.org/2000/svg"
                   width={104}
                   height={104}
