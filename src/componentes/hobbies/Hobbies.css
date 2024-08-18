@@ -64,14 +64,13 @@ section.hobbies {
   .hobbies__title {
     padding: 1rem 0 0.5rem;
   }
-
-  .hobbies__box {
-    padding: 1rem 0 0;
-  }
-
   .hobbies__line {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+
+  .hobbies__box {
+    padding: 1rem 0 0;
   }
 }
