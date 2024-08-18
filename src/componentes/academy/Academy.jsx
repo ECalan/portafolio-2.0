@@ -43,16 +43,16 @@ const Academy = () => {
             <ul className="academic__courses__list">
               <li className="academic__courses__item__img">
                 <img
-                  className="academic__courses__item__img__logo"
+                  className="academic__courses__item__img__logo academic__university"
                   src="./img/Logo_Universidadrural-Guatemala.png"
                   alt="Universidad Rural de Guatemala"
                 />
               </li>
               <li className="academic__courses__item__title">
-                <h4>Actualmente en formación - Ing. Industrial</h4>
+                <h4>1 curso - Ing. Industrial</h4>
               </li>
               <li className="academic__courses__item__subtitle">
-                <p>2024 - Universidad Rural de Guatemala</p>
+                <p>2023 - Universidad Rural de Guatemala</p>
               </li>
             </ul>
           </div>
