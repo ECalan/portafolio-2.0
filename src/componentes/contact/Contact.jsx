@@ -1,5 +1,20 @@
+import React, { useState } from "react";
 import "../contact/Contact.css";
+
 const Contact = () => {
+  const [message, setMessage] = useState("");
+  const [charCount, setCharCount] = useState(0);
+  const maxLength = 100;
+
+  const handleInputChange = (e) => {
+    const inputText = e.target.value;
+
+    if (inputText.length <= maxLength) {
+      setMessage(inputText);
+      setCharCount(inputText.length);
+    }
+  };
+
   return (
     <section className="formcontact" id="contac">
       <div className="formcontact__contact">
@@ -85,8 +100,10 @@ const Contact = () => {
                 id="mensaje"
                 name="mensaje"
                 placeholder="Mensaje"
-                maxLength="300"
+                maxLength={maxLength}
                 required
+                value={message}
+                onChange={handleInputChange}
                 data-tipo="mensaje"
                 data-mensaje
               ></textarea>
@@ -100,7 +117,9 @@ const Contact = () => {
                 className="textarea__mensaje__caracteres"
                 id="textarea__contador"
               >
-                0/100
+                {charCount === maxLength
+                  ? `Usted ha llegado al límite de caracteres disponible: ${charCount}/${maxLength}`
+                  : `${charCount}/${maxLength}`}
               </span>
             </div>
             <button type="submit" className="formcontact__boton">
