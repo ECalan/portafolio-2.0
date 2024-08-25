@@ -1,0 +1,225 @@
+section.formcontact {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formcontact__contact {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.formcontact--izquierda {
+  display: block;
+}
+
+.formcontact__img {
+  width: 94%;
+}
+
+.formcontact__text {
+  display: block;
+  width: 70%;
+}
+
+.formcontact__title {
+  font-weight: 700;
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--titulo-color);
+}
+
+.formcontact__subtext {
+  color: var(--contenido-parrafos-color);
+}
+
+.formcontact__form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+
+.input__container {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.formcontact__input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  padding: 1.375rem 0.5rem 0.5rem;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.email__input {
+  border-bottom-color: var(--green-color);
+}
+
+.formcontact__input::placeholder {
+  visibility: hidden;
+  color: #00000000;
+}
+
+.formcontact__input:focus {
+  outline: none;
+}
+
+.formcontact__input__label {
+  display: block;
+  position: relative;
+  bottom: 2.7rem;
+  left: 0.5rem;
+  font-size: 1rem;
+  color: var(--contenido-parrafos-color);
+  transition: all 0.25s;
+}
+
+.formcontact__input:not(:placeholder-shown) + .formcontact__input__label,
+.formcontact__input:focus + .formcontact__input__label {
+  position: relative;
+  font-size: 0.875rem;
+  bottom: 2.7rem;
+  transition: all 0.25s;
+}
+
+.input-container--invalid {
+  margin-bottom: 0;
+}
+
+.input-container--invalid .formcontact__input {
+  border: 1px solid var(--advertencia-color);
+  border-radius: 7px;
+}
+
+.input-container--invalid .formcontact__input__label {
+  color: var(--advertencia-color);
+}
+
+.formcontact__input__message__error {
+  display: none;
+}
+
+.input-container--invalid .formcontact__input__message__error {
+  color: var(--advertencia-color);
+  display: block;
+  position: relative;
+  left: 0.5rem;
+  bottom: 0.8rem;
+}
+
+.textarea__container {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.formcontact__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3rem;
+  background: none;
+  border-color: var(--green-color);
+  border-radius: 7px;
+}
+
+.formcontact__textarea::placeholder {
+  visibility: hidden;
+}
+
+.formcontact__textarea:focus {
+  outline: none;
+}
+
+.formcontact__textarea__label {
+  display: block;
+  position: relative;
+  bottom: 10.8rem;
+  left: 0.5rem;
+  font-size: 1rem;
+  color: var(--contenido-parrafos-color);
+  transition: all 0.25s;
+}
+
+.formcontact__textarea:not(:placeholder-shown) + .formcontact__textarea__label,
+.formcontact__textarea:focus + .formcontact__textarea__label {
+  font-size: 0.875rem;
+  transition: all 0.25s;
+}
+
+.textarea-container--invalid {
+  margin-bottom: 0;
+}
+
+.textarea-container--invalid .formcontact__textarea {
+  border-color: var(--green-color);
+  border-radius: 7px;
+}
+
+.textarea-container--invalid .formcontact__textarea__label {
+  color: var(--green-color);
+}
+
+.formcontact__textarea__message__error {
+  display: none;
+}
+
+.textarea-container--invalid .formcontact__textarea__message__error {
+  display: block;
+  color: var(--advertencia-color);
+  position: relative;
+  left: 0.5rem;
+  bottom: 1.9rem;
+}
+
+.textarea__mensaje__caracteres {
+  display: none;
+  position: relative;
+  color: var(--green-color);
+  left: 0.5rem;
+  bottom: 0.5rem;
+}
+
+.formcontact__boton {
+  width: 144px;
+  height: 51px;
+  border-color: var(--green-color);
+  color: var(--green-color);
+}
+
+/*Tablet*/
+
+@media screen and (max-width: 768px) {
+  .formcontact__contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formcontact__img {
+    display: none;
+  }
+
+  .formcontact__text {
+    width: 100%;
+  }
+
+  .formcontact__boton {
+    border-radius: 8px;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 414px) {
+}
