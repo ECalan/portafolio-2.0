@@ -4,6 +4,7 @@ import About from "./componentes/about/About";
 import Skills from "./componentes/skills/Skills";
 import Hobbies from "./componentes/hobbies/Hobbies";
 import Academy from "./componentes/academy/Academy";
+import Experiences from "./componentes/experiences/Experiences";
 import "./App.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Skills />
       <Hobbies />
       <Academy />
+      <Experiences />
     </div>
   );
 }
