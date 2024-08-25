@@ -133,6 +133,7 @@ section.formcontact {
   background: none;
   border-color: var(--green-color);
   border-radius: 7px;
+  color: var(--contenido-parrafos-color);
 }
 
 .formcontact__textarea::placeholder {
@@ -185,7 +186,6 @@ section.formcontact {
 }
 
 .textarea__mensaje__caracteres {
-  display: none;
   position: relative;
   color: var(--green-color);
   left: 0.5rem;
