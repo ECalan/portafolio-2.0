@@ -9,7 +9,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
+    <>
       <Menu />
       <Title />
       <About />
@@ -17,7 +17,7 @@ function App() {
       <Hobbies />
       <Academy />
       <Experiences />
-    </div>
+    </>
   );
 }
 
