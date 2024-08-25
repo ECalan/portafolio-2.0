@@ -5,6 +5,7 @@ import Skills from "./componentes/skills/Skills";
 import Hobbies from "./componentes/hobbies/Hobbies";
 import Academy from "./componentes/academy/Academy";
 import Experiences from "./componentes/experiences/Experiences";
+import Contact from "./componentes/contact/Contact";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Hobbies />
       <Academy />
       <Experiences />
+      <Contact />
     </>
   );
 }
