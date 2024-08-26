@@ -26,6 +26,7 @@ section.formcontact {
 .formcontact__text {
   display: block;
   width: 70%;
+  border-radius: 5px;
 }
 
 .formcontact__title {
@@ -47,8 +48,9 @@ section.formcontact {
 }
 
 .input__container {
-  display: block;
+  display: grid;
   width: 100%;
+  grid-template-areas: "input";
   margin-bottom: 1rem;
 }
 
@@ -62,10 +64,12 @@ section.formcontact {
   border-right: none;
   padding: 1.375rem 0.5rem 0.5rem;
   border-bottom: 1px solid #c8c8c8;
+  color: var(--contenido-parrafos-color);
+  grid-area: input;
 }
 
 .email__input {
-  border-bottom-color: var(--green-color);
+  border-bottom-color: var(--green-light-color);
 }
 
 .formcontact__input::placeholder {
@@ -78,11 +82,11 @@ section.formcontact {
 }
 
 .formcontact__input__label {
-  display: block;
-  position: relative;
-  bottom: 2.7rem;
-  left: 0.5rem;
-  font-size: 1rem;
+  grid-area: input;
+  width: max-content;
+  height: 40%;
+  padding-left: 1rem;
+  font-weight: bold !important;
   color: var(--contenido-parrafos-color);
   transition: all 0.25s;
 }
@@ -91,7 +95,6 @@ section.formcontact {
 .formcontact__input:focus + .formcontact__input__label {
   position: relative;
   font-size: 0.875rem;
-  bottom: 2.7rem;
   transition: all 0.25s;
 }
 
@@ -110,6 +113,7 @@ section.formcontact {
 
 .formcontact__input__message__error {
   display: none;
+  position: relative;
 }
 
 .input-container--invalid .formcontact__input__message__error {
@@ -121,17 +125,19 @@ section.formcontact {
 }
 
 .textarea__container {
-  display: block;
+  display: grid;
   width: 100%;
+  grid-template-areas: "textarea";
   margin-bottom: 1rem;
 }
 
 .formcontact__textarea {
+  grid-area: textarea;
   box-sizing: border-box;
   width: 100%;
-  padding: 3rem;
+  padding: 3rem 3rem 3rem 0.5rem;
   background: none;
-  border-color: var(--green-color);
+  border-color: var(--green-light-color);
   border-radius: 7px;
   color: var(--contenido-parrafos-color);
 }
@@ -145,11 +151,11 @@ section.formcontact {
 }
 
 .formcontact__textarea__label {
-  display: block;
-  position: relative;
-  bottom: 10.8rem;
-  left: 0.5rem;
-  font-size: 1rem;
+  grid-area: textarea;
+  width: max-content;
+  height: 10%;
+  padding: 1rem 0 0 1rem;
+  font-weight: bold !important;
   color: var(--contenido-parrafos-color);
   transition: all 0.25s;
 }
@@ -165,12 +171,12 @@ section.formcontact {
 }
 
 .textarea-container--invalid .formcontact__textarea {
-  border-color: var(--green-color);
+  border-color: var(--green-light-color);
   border-radius: 7px;
 }
 
 .textarea-container--invalid .formcontact__textarea__label {
-  color: var(--green-color);
+  color: var(--green-light-color);
 }
 
 .formcontact__textarea__message__error {
@@ -186,10 +192,12 @@ section.formcontact {
 }
 
 .textarea__mensaje__caracteres {
-  position: relative;
-  color: var(--green-color);
-  left: 0.5rem;
-  bottom: 0.5rem;
+  display: grid;
+  font-weight: bold !important;
+
+  text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0);
+  color: var(--green-light-color);
+  padding: 1rem 0 0 1rem;
 }
 
 .formcontact__boton {
@@ -197,6 +205,7 @@ section.formcontact {
   height: 51px;
   border-color: var(--green-color);
   color: var(--green-color);
+  border-radius: 10px;
 }
 
 /*Tablet*/
