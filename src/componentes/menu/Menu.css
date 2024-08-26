@@ -96,7 +96,7 @@ a.black {
 }
 
 .menu__button__themes {
-  background-color: #40ff00ff;
+  background-color: var(--green-light-color);
   border-radius: 5px;
 }
 
@@ -106,7 +106,7 @@ a.black {
 
 /* hover predeterminate */
 a:hover {
-  color: #40ff00ff;
+  color: var(--green-light-color);
 }
 
 /* hover selective */
