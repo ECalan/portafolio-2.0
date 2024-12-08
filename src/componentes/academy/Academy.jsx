@@ -3,13 +3,13 @@ const Academy = () => {
   return (
     <section className="academy" id="formacion">
       <div className="academy__container">
-        <h2 className="academy__title">Formación académica</h2>
+        <h3 className="academy__title">Formación académica</h3>
         <div className="academy__courses" id="academy__all">
           <div className="academy__courses__box">
             <ul className="academy__courses__list">
               <li className="academy__courses__item__img">
                 <img
-                  className="academy__courses__item__img__logo"
+                  className="academy__courses__item__img__logo alura_logo"
                   src="./img/Logo_Alura_Latam.png"
                   alt="Alura Latam"
                 />
@@ -26,7 +26,7 @@ const Academy = () => {
             <ul className="academy__courses__list">
               <li className="academy__courses__item__img">
                 <img
-                  className="academy__courses__item__img__logo"
+                  className="academy__courses__item__img__logo alura_logo"
                   src="./img/Logo_Alura_Latam.png"
                   alt="Alura Latam"
                 />
