@@ -32,6 +32,7 @@ section.experience {
 .experience__img {
   width: 755px;
   border: 2px solid var(--green-color);
+  transition: 0.7s;
 }
 
 .experience__info {
@@ -70,6 +71,7 @@ section.experience {
   height: 51px;
   border-color: var(--green-color);
   color: var(--green-color);
+  transition: 0.7s;
 }
 
 .experience__boton--demo {
@@ -78,6 +80,7 @@ section.experience {
   border-color: var(--green-color);
   background-color: var(--green-color);
   color: #ffffff;
+  transition: 0.7s;
 }
 
 /*Tablet*/

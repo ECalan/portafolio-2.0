@@ -66,10 +66,12 @@ section.formcontact {
   border-bottom: 1px solid #c8c8c8;
   color: var(--contenido-parrafos-color);
   grid-area: input;
+  transition: 0.7s;
 }
 
 .email__input {
   border-bottom-color: var(--green-light-color);
+  transition: 0.7s;
 }
 
 .formcontact__input::placeholder {
@@ -140,6 +142,7 @@ section.formcontact {
   border-color: var(--green-light-color);
   border-radius: 7px;
   color: var(--contenido-parrafos-color);
+  transition: 0.7s;
 }
 
 .formcontact__textarea::placeholder {
@@ -198,6 +201,7 @@ section.formcontact {
   text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0);
   color: var(--green-light-color);
   padding: 1rem 0 0 1rem;
+  transition: 0.7s;
 }
 
 .formcontact__boton {

@@ -29,6 +29,7 @@ body {
 a {
   text-decoration: none !important;
   color: green;
+  transition: 0.7s;
 }
 
 ul,
