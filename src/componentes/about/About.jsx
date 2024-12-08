@@ -37,15 +37,15 @@ const About = () => {
         <h3 className="about__title_soft_skills">Soft Skills</h3>
         <div className="about__container__paragraph">
           <ul className="about__list">
-            <li className="about__item">
+            <p className="about__item">
               ➢ Comunicación para trabajar en equipo.
-            </li>
-            <li className="about__item">➢ Enfocarse en lo mas importante.</li>
-            <li className="about__item">➢ Ser productivo.</li>
-            <li className="about__item">
+            </p>
+            <p className="about__item">➢ Enfocarse en lo mas importante.</p>
+            <p className="about__item">➢ Ser productivo.</p>
+            <p className="about__item">
               ➢ Estrategias para actividades diarias.
-            </li>
-            <li className="about__item">➢ transformación ágil</li>
+            </p>
+            <p className="about__item">➢ transformación ágil</p>
           </ul>
         </div>
       </div>
