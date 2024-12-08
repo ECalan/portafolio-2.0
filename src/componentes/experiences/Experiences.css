@@ -17,7 +17,7 @@ section.experience {
   font-weight: bold;
   font-size: 5rem;
   padding: 2rem 0;
-  color: var(--titulo-color);
+  color: var(--titulo-white-color);
 }
 
 .experiencie__box {
@@ -51,12 +51,12 @@ section.experience {
 .experience__title {
   font-weight: 700;
   font-size: 22px;
-  color: var(--titulo-color);
+  color: var(--titulo-white-color);
 }
 
 .experience__text {
   padding: 1rem 0;
-  color: var(--contenido-parrafos-color);
+  color: var(--parrafo-semi-white-color);
 }
 
 .experience__description {
