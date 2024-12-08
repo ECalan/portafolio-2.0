@@ -39,8 +39,9 @@ section.hobbies {
   width: 100%;
 }
 
-.hobbies__svg {
+.hobbies__all__svg {
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
+  transition: 0.7s;
 }
 
 .hobbies__name {
