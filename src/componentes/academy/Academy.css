@@ -17,7 +17,7 @@ section.academy {
   font-weight: bold;
   font-size: 2rem;
   padding: 2rem 0;
-  color: var(--titulo-color);
+  color: var(--titulo-white-color);
 }
 
 .academy__courses {
@@ -33,20 +33,23 @@ section.academy {
   justify-content: center;
 }
 
+.alura_logo {
+  filter: drop-shadow(0 0 10px rgb(0, 0, 0, 1));
+}
+
+.academy__university {
+  filter: drop-shadow(0 0 10px rgb(0, 0, 0, 1));
+}
 .academy__courses__item__title {
   padding-top: 1rem;
   font-weight: 700;
-  color: var(--contenido-parrafos-color);
+  color: var(--titulo-white-color);
   text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0);
 }
 
 .academy__courses__item__subtitle {
-  color: var(--contenido-parrafos-color);
+  color: var(--parrafo-semi-white-color);
   text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0);
-}
-
-.academy__university {
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
 }
 
 /*Tablet*/
