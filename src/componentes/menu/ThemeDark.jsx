@@ -1,5 +1,9 @@
 const ThemeDark = () => {
   document.querySelector("#themes").innerHTML = "Theme Light";
+  document.querySelector(".menu__button__themes").style =
+    "background-color: var(--green-light-color);";
+  document.querySelector(".title__profile").style =
+    "border: 0.5rem solid var(--green-light-color);";
   document.querySelectorAll("a").forEach(function (e) {
     e.classList.remove("grey_anchor", "green_hover");
     e.classList.add("green_anchor");
@@ -23,6 +27,48 @@ const ThemeDark = () => {
   document.querySelectorAll("p").forEach((e) => {
     e.classList.remove("paragraph_semi_dark_grey_color");
     e.classList.add("paragraph_semi_white_color");
+  });
+  document
+    .querySelectorAll(".skills__all__imgs, .hobbies__all__svg")
+    .forEach((e) => {
+      e.style.filter = "";
+    });
+  document.querySelectorAll(".skills__color__icon__fill").forEach((e) => {
+    e.classList.remove("icon_light_blue_color_fill");
+    e.classList.add("icon_light_green_color_fill");
+  });
+  document.querySelectorAll(".skills__color__icon__stroke").forEach((e) => {
+    e.classList.remove("icon_light_blue_color_stroke");
+    e.classList.add("icon_light_green_color_stroke");
+  });
+  document.querySelectorAll(".experience__img").forEach((e) => {
+    e.style.border = "";
+  });
+  document
+    .querySelectorAll(
+      ".experience__boton--repo,.experience__boton--demo, .formcontact__boton"
+    )
+    .forEach((e) => {
+      e.style.borderColor = "";
+    });
+  document
+    .querySelectorAll(
+      ".experience__boton--repo, .formcontact__boton, .textarea__mensaje__caracteres"
+    )
+    .forEach((e) => {
+      e.style.color = "";
+    });
+  document.querySelectorAll(".experience__boton--demo").forEach((e) => {
+    e.style.backgroundColor = "";
+  });
+  document.querySelectorAll(".formcontact__input").forEach((e) => {
+    e.style.borderBottom = "";
+  });
+  document.querySelectorAll(".email__input").forEach((e) => {
+    e.style.borderBottomColor = "";
+  });
+  document.querySelectorAll(".formcontact__textarea").forEach((e) => {
+    e.style.borderColor = "";
   });
 };
 
