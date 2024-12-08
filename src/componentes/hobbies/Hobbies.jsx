@@ -27,7 +27,7 @@ const Hobbies = () => {
                   </g>
                 </svg>
               </li>
-              <li className="hobbies__name">Escuchar música</li>
+              <p className="hobbies__name">Escuchar música</p>
             </ul>
           </div>
           <div className="hobbies__box">
@@ -46,7 +46,7 @@ const Hobbies = () => {
                   ></path>
                 </svg>
               </li>
-              <li className="hobbies__name">Diseñar</li>
+              <p className="hobbies__name">Diseñar</p>
             </ul>
           </div>
           <div className="hobbies__box">
@@ -68,7 +68,7 @@ const Hobbies = () => {
                   </g>
                 </svg>
               </li>
-              <li className="hobbies__name">Editar</li>
+              <p className="hobbies__name">Editar</p>
             </ul>
           </div>
           <div className="hobbies__box">
@@ -87,7 +87,7 @@ const Hobbies = () => {
                   ></path>
                 </svg>
               </li>
-              <li className="hobbies__name">Dibujar</li>
+              <p className="hobbies__name">Dibujar</p>
             </ul>
           </div>
           <div className="hobbies__box">
@@ -110,7 +110,7 @@ const Hobbies = () => {
                   ></path>
                 </svg>
               </li>
-              <li className="hobbies__name">Ver series</li>
+              <p className="hobbies__name">Ver series</p>
             </ul>
           </div>
           <div className="hobbies__box">
@@ -166,7 +166,7 @@ const Hobbies = () => {
                   </g>
                 </svg>
               </li>
-              <li className="hobbies__name">Jugar videojuegos</li>
+              <p className="hobbies__name">Jugar videojuegos</p>
             </ul>
           </div>
         </div>
