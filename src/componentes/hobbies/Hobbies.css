@@ -19,7 +19,7 @@ section.hobbies {
   font-weight: bold;
   font-size: 2rem;
   padding: 2rem 0;
-  color: var(--titulo-color);
+  color: var(--titulo-white-color);
 }
 
 .hobbies__line {
@@ -46,7 +46,7 @@ section.hobbies {
 .hobbies__name {
   text-align: center;
   font-weight: bold;
-  color: var(--contenido-parrafos-color);
+  color: var(--parrafo-semi-white-color);
   text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0);
 }
 
