@@ -16,12 +16,13 @@ section.title {
   position: relative;
   width: 24%;
   float: right;
-  border: 0.5rem solid rgb(46, 184, 0);
+  border: 0.5rem solid var(--green-light-color);
   border-radius: 100%;
   z-index: 2;
   /*animation left - right*/
   transform: translate(-940px);
   animation: apareceIzquierda 2.2s forwards;
+  transition: 0.7s;
 }
 
 .title__container {
@@ -90,6 +91,7 @@ section.title {
   /*animation left - right*/
   transform: translate(-940px);
   animation: apareceIzquierda 2.7s forwards;
+  transition: 0.7s;
 }
 
 .title__subsection {
