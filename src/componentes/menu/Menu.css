@@ -80,16 +80,6 @@ header.menu {
   flex-direction: column;
 }
 
-/* style definid 1 */
-a.green {
-  color: green;
-}
-
-/* style definid 2 */
-a.black {
-  color: black;
-}
-
 .menu__list {
   display: flex;
   justify-content: space-around;
@@ -102,16 +92,12 @@ a.black {
 
 .menu__list__item {
   display: flex;
+  font-weight: bold;
 }
 
 /* hover predeterminate */
 a:hover {
   color: var(--green-light-color);
-}
-
-/* hover selective */
-a.green-hover:hover {
-  color: green;
 }
 
 .menu__list__item__icon {
