@@ -13,10 +13,10 @@ const Experiences = () => {
           alt="Encriptador de texto"
         />
         <div className="experience__info" id="experience__info1">
-          <h2 className="experience__title">Encriptador de texto</h2>
-          <h3 className="experience__text">
+          <h3 className="experience__title">Encriptador de texto</h3>
+          <p className="experience__text">
             Challenge Alura - Codificador de texto
-          </h3>
+          </p>
           <div className="experience__description">
             <span className="experience__repo">
               <a
@@ -50,10 +50,10 @@ const Experiences = () => {
           className="experience__info info__izquierda"
           id="experience__info2"
         >
-          <h2 className="experience__title">Organizador de equipos</h2>
-          <h3 className="experience__text">
+          <h3 className="experience__title">Organizador de equipos</h3>
+          <p className="experience__text">
             Clase impartida por Alura _ Desarrollado en React
-          </h3>
+          </p>
           <div className="experience__description">
             <span className="experience__repo">
               <a
@@ -84,10 +84,10 @@ const Experiences = () => {
           alt="E-commerce"
         />
         <div className="experience__info" id="experience__info3">
-          <h2 className="experience__title">E-Commerce _ AluraGeek</h2>
-          <h3 className="experience__text">
+          <h3 className="experience__title">E-Commerce _ AluraGeek</h3>
+          <p className="experience__text">
             Challenge Oracle - simulador de E-commerce
-          </h3>
+          </p>
           <div className="experience__description">
             <span className="experience__repo">
               <a
@@ -121,8 +121,8 @@ const Experiences = () => {
           className="experience__info info__izquierda"
           id="experience__info4"
         >
-          <h2 className="experience__title">Portafolio_0.1 _ Eddy Calan</h2>
-          <h3 className="experience__text">Challenge Oracle - Portafolio</h3>
+          <h3 className="experience__title">Portafolio_0.1 _ Eddy Calan</h3>
+          <p className="experience__text">Challenge Oracle - Portafolio</p>
           <div className="experience__description">
             <span className="experience__repo">
               <a
