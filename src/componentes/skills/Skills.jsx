@@ -32,7 +32,7 @@ const Skills = () => {
                   </g>
                 </svg>
               </li>
-              <li className="skills__name"> HTML 5</li>
+              <p className="skills__name"> HTML 5</p>
             </ul>
           </div>
           <div className="skills__box">
@@ -57,7 +57,7 @@ const Skills = () => {
                   </g>
                 </svg>
               </li>
-              <li className="skills__name">Javascript</li>
+              <p className="skills__name">Javascript</p>
             </ul>
           </div>
           <div className="skills__box">
@@ -76,7 +76,7 @@ const Skills = () => {
                   ></path>
                 </svg>
               </li>
-              <li className="skills__name">React</li>
+              <p className="skills__name">React</p>
             </ul>
           </div>
           <div className="skills__box">
@@ -101,7 +101,7 @@ const Skills = () => {
                   ></path>
                 </svg>
               </li>
-              <li className="skills__name">CSS</li>
+              <p className="skills__name">CSS</p>
             </ul>
           </div>
         </div>
