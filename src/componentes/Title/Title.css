@@ -28,10 +28,12 @@ section.title {
   margin: 4rem 0;
 }
 
-.title__bio {
+.title__biography {
   padding: 1rem 4rem;
   font-size: 3rem;
   font-weight: 700;
+  position: relative;
+  color: var(--titulo-white-color);
   border-radius: 10px;
   background-color: #212121;
   opacity: 1;
@@ -93,26 +95,10 @@ section.title {
 .title__subsection {
   padding: 1rem 0;
   font-size: 20px;
-
+  color: var(--parrafo-semi-white-color);
   /*animation left - right*/
   transform: translate(-940px);
   animation: apareceIzquierda 2.9s forwards;
-}
-
-.title__biography {
-  position: relative;
-  color: var(--titulo-color);
-}
-
-.title__bio:before {
-  content: "";
-  display: block;
-  width: 85%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
 }
 
 .title__network {
