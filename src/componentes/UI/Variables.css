@@ -3,6 +3,7 @@
   --titulo-dark-grey-color: rgb(61, 61, 61);
   --parrafo-semi-white-color: rgb(191, 191, 191);
   --parrafo-semi-dark-grey-color: rgb(69, 69, 69);
+  --blue-light-color: #59e9fc;
   --green-color: green;
   --green-light-color: #40ff00ff;
   --grey-color: #575757;
@@ -11,7 +12,7 @@
 
 /* style definid #1 */
 a.green_anchor {
-  color: green;
+  color: var(--green-color);
 }
 
 /* style definid #2 */
@@ -21,7 +22,7 @@ a.grey_anchor {
 
 /* hover selective */
 a.green_hover:hover {
-  color: green;
+  color: var(--blue-light-color);
 }
 
 /*Style definid h #1*/
@@ -46,3 +47,21 @@ p.paragraph_semi_white_color {
 p.paragraph_semi_dark_grey_color {
   color: var(--parrafo-semi-dark-grey-color);
 }
+
+.icon_light_green_color_fill {
+  fill: var(--green-light-color);
+}
+
+.icon_light_blue_color_fill {
+  fill: var(--blue-light-color);
+}
+
+.icon_light_green_color_stroke {
+  stroke: var(--green-light-color);
+}
+
+.icon_light_blue_color_stroke {
+  stroke: var(--blue-light-color);
+}
+
+/*color turquesa #00e1ff*/
