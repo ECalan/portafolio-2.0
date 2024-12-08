@@ -34,11 +34,11 @@ section.formcontact {
   font-size: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  color: var(--titulo-color);
+  color: var(--titulo-white-color);
 }
 
 .formcontact__subtext {
-  color: var(--contenido-parrafos-color);
+  color: var(--parrafo-semi-white-color);
 }
 
 .formcontact__form {
