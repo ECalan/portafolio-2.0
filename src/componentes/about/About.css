@@ -22,13 +22,13 @@
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  color: var(--titulo-color);
+  color: var(--titulo-white-color);
 }
 
 .about__paragraph {
   padding: 1rem 0;
   font-size: 1.3rem;
-  color: var(--contenido-parrafos-color);
+  color: var(--parrafo-semi-white-color);
   text-align: justify;
 }
 
@@ -51,7 +51,7 @@
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  color: var(--titulo-color);
+  color: var(--titulo-white-color);
 }
 
 .about__container__paragraph {
@@ -64,6 +64,7 @@
 
 .about__item {
   font-size: 1.3rem;
+  color: var(--parrafo-semi-white-color);
 }
 /*Tablet*/
 @media screen and (max-width: 768px) {
