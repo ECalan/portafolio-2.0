@@ -26,12 +26,12 @@ const Contact = () => {
           />
         </div>
         <div className="formcontact__text">
-          <h2 className="formcontact__title">Contacto</h2>
-          <h3 className="formcontact__subtext">¿Quieres contactarme?</h3>
-          <h3 className="formcontact__subtext">
+          <h3 className="formcontact__title">Contacto</h3>
+          <p className="formcontact__subtext">¿Quieres contactarme?</p>
+          <p className="formcontact__subtext">
             Complete el siguiente formulario y me pondré en contacto con usted
             lo antes posible.{" "}
-          </h3>
+          </p>
           <form
             className="formcontact__form"
             name="contact"
