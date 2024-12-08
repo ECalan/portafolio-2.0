@@ -1,7 +1,48 @@
 :root {
-  --titulo-color: rgb(228, 228, 228);
-  --contenido-parrafos-color: rgb(191, 191, 191);
+  --titulo-white-color: rgb(228, 228, 228);
+  --titulo-dark-grey-color: rgb(61, 61, 61);
+  --parrafo-semi-white-color: rgb(191, 191, 191);
+  --parrafo-semi-dark-grey-color: rgb(69, 69, 69);
   --green-color: green;
   --green-light-color: #40ff00ff;
+  --grey-color: #575757;
   --advertencia-color: red;
+}
+
+/* style definid #1 */
+a.green_anchor {
+  color: green;
+}
+
+/* style definid #2 */
+a.grey_anchor {
+  color: var(--grey-color);
+}
+
+/* hover selective */
+a.green_hover:hover {
+  color: green;
+}
+
+/*Style definid h #1*/
+h2.title_white_color,
+h3.title_white_color,
+h4.title_white_color {
+  color: var(--titulo-white-color);
+}
+
+/* Style definid h #2*/
+h2.title_dark_grey_color,
+h3.title_dark_grey_color,
+h4.title_dark_grey_color {
+  color: var(--titulo-dark-grey-color);
+}
+
+/* Style definid p #1 */
+p.paragraph_semi_white_color {
+  color: var(--parrafo-semi-white-color);
+}
+
+p.paragraph_semi_dark_grey_color {
+  color: var(--parrafo-semi-dark-grey-color);
 }
