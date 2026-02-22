@@ -16,7 +16,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="formcontact" id="contac">
+    <section className="formcontact" id="contact">
       <div className="formcontact__contact">
         <div className="formcontact--izquierda">
           <img
