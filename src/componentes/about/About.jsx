@@ -8,18 +8,16 @@ const About = () => {
         <div className="about__container__paragraph">
           <p className="about__paragraph">
             Soy una persona apasionada enfocada a lograr mis metas, me
-            especializo en la atencion al cliente con experiencia en el area
-            Administrativa y Recursos Humano, empece desde abajo como operador
-            de maquina clasificadora, luego fui ascendido en el area
-            adminstrativa como Asistente Administrativo de Operaciones en la
-            empresa "Granjazul" despues de tres años de ejercer mi puesto,
-            inicie nuevamente en la empresa "Polyproductos de Guatemala, S.A",
-            donde se me dio la oportunidad de ascender al area de Recursos
-            Humanos como Asistente de Recursos Humanos, logrando asi varios años
-            de profesión, creo en un solo Dios y que sin el no lograriamos nada.
+            especializo en la atencion al cliente con experiencia en el area de
+            Recursos Humano y Administrativa, empece como operador de maquina
+            clasificadora, luego fui ascendido en el area adminstrativa, despues
+            al area de Recursos Humanos como Asistente de Recursos Humanos y por
+            ultimo como Asistente de Relaciones Laborales, logrando asi varios
+            años de profesión, soy fien creyente de que hay un solo Dios y que
+            sin el no lograriamos nada.
           </p>
           <p className="about__paragraph">
-            soy fanatico de todo lo relacionado con la tecnología tanto a nivel
+            Soy fanatico de todo lo relacionado con la tecnología tanto a nivel
             de hardware como software, me encanta programar, escuchar música,
             diseñar, editar, dibujar, ver anime, bailar y jugar videojuegos.
             Suelo ser muy sociable, tengo un gusto por las peliculas de acción,
