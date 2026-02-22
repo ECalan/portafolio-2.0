@@ -1,5 +1,13 @@
 import "./Title.css";
 const Title = () => {
+  const fechaActual = new Date();
+  const fechaNacimiento = new Date(1990, 1, 1);
+  const años = fechaActual.getFullYear() - fechaNacimiento.getFullYear();
+
+  const formacion = "Bachillerato en Computación con Orientación Comercial";
+  const formacionFutura = "Ingenieria en Sistema";
+  const estudioActual = "Alumni One en Oracle ONE en Alura Latam";
+
   return (
     <section className="title">
       <div className="title__div">
@@ -13,10 +21,9 @@ const Title = () => {
             Hola, mi nombre es Eddy Calan y construyo paginas web
           </h2>
           <p className="title__subsection">
-            Soy orgullosamente Guatemalteco, tengo 34 años de edad, formado en
-            Bachillerato en Computación con Orientación Comercial, futuramente
-            estudiante de Ingenieria en Sistemas y actualmente alumno Alumni One
-            en Oracle ONE en Alura Latam.
+            Soy orgullosamente Guatemalteco, tengo {años} años de edad, formado
+            en {formacion}, futuramente estudiante de {formacionFutura} y
+            actualmente alumno {estudioActual}.
           </p>
           <ul className="title__network">
             <li className="title__network__item">
