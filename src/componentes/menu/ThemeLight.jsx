@@ -16,10 +16,10 @@ const ThemeLight = () => {
     "background: 0% 0% / 100px 100px repeat repeating-linear-gradient(to bottom left, #edf0f7ff 0% 10%, #f0f2faff 10% 20%, #f0f6ffff 20% 30%, #f8f8fcff 30% 40%, #fcfcfcff 40% 50%), 0% 0% / 100px 100px repeat repeating-linear-gradient(to bottom right, #edf0f7ff 0% 10%, #f0f2faff 10% 20%, #f0f6ffff 20% 30%, #f8f8fcff 30% 40%, #fcfcfcff 40% 50%);background-blend-mode: multiply;";
   document
     .querySelectorAll(
-      ".title__div, .about__container, .about__container__soft__skills, .skills__container, .hobbies__container, .academy__container, .experiencie__box, .formcontact__contact"
+      ".title__div, .about__container, .about__container__soft__skills, .skills__container, .hobbies__container, .academy__container, .experiencie__box, .formcontact__contact",
     )
     .forEach((e) => {
-      e.style = "background-color: rgba(0, 0, 0, 0.1);";
+      e.style = "background-color: rgba(0, 0, 0, 0.2);";
     });
   document.querySelectorAll("h2, h3, h4").forEach((e) => {
     e.classList.remove("title_white_color");
@@ -32,7 +32,7 @@ const ThemeLight = () => {
   document
     .querySelectorAll(".skills__all__imgs, .hobbies__all__svg")
     .forEach((e) => {
-      e.style.filter = "drop-shadow(0 0 10px rgba(255, 255, 255, 0.8))";
+      e.style.filter = "drop-shadow(0 0 10px rgba(0, 0, 0, 0.8))";
     });
   document.querySelectorAll(".skills__color__icon__fill").forEach((e) => {
     e.classList.remove("icon_light_green_color_fill");
@@ -47,14 +47,14 @@ const ThemeLight = () => {
   });
   document
     .querySelectorAll(
-      ".experience__boton--repo, .experience__boton--demo, .formcontact__boton"
+      ".experience__boton--repo, .experience__boton--demo, .formcontact__boton",
     )
     .forEach((e) => {
       e.style.borderColor = "var(--blue-light-color)";
     });
   document
     .querySelectorAll(
-      ".experience__boton--repo, .formcontact__boton, .textarea__mensaje__caracteres"
+      ".experience__boton--repo, .formcontact__boton, .textarea__mensaje__caracteres",
     )
     .forEach((e) => {
       e.style.color = "var(--blue-light-color)";
