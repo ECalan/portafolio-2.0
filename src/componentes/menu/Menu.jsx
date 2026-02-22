@@ -49,7 +49,7 @@ const Menu = () => {
             <a href="#xp">Proyectos</a>
           </li>
           <li className="menu__list__item contacto">
-            <a href="#contacto">@contacto</a>
+            <a href="#contact">@contacto</a>
           </li>
         </ul>
       </nav>
