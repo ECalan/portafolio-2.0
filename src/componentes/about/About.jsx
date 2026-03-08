@@ -9,13 +9,9 @@ const About = () => {
           <p className="about__paragraph">
             Soy una persona apasionada, enfocada en lograr mis metas. Me
             especializo en la atención al cliente, con experiencia en el área de
-            Recursos Humanos y Administrativa. Empecé como operador de máquina
-            clasificadora; ascendí a Asistente Administrativo de Operaciones,
-            luego al área de Recursos Humanos como Asistente de Recursos Humanos
-            y, por último, como Asistente de Relaciones Laborales en el área de
-            Factor Humano, logrando así varios años de experiencia profesional.
-            Soy fiel creyente de que hay un solo Dios y que sin Él no
-            lograríamos nada.
+            Recursos Humanos y Administrativo, logrando así varios años de
+            experiencia profesional. Soy fiel creyente de que hay un solo Dios y
+            que sin Él no lograríamos nada.
           </p>
           <p className="about__paragraph">
             Soy fanático de todo lo relacionado con la tecnología, tanto a nivel
