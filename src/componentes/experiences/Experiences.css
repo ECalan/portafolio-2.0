@@ -66,6 +66,11 @@ section.experience {
   width: 100%;
 }
 
+.experience__boton--img {
+  width: 50px;
+  position: absolute;
+}
+
 .experience__boton--repo {
   width: 116px;
   height: 51px;
