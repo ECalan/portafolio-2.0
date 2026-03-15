@@ -1,41 +1,46 @@
 import "../experiences/Experiences.css";
 import { createAnimatable, utils, stagger } from "https://esm.sh/animejs";
 const Experiences = () => {
-  const $button = document.querySelector(".experience__boton--demo");
-  const $img = document.querySelector(".experience__boton--img");
+  const buttons = document.querySelectorAll(".experience__boton--demo");
 
-  let buttonBounds = $button.getBoundingClientRect();
-  let imgBounds = $img.getBoundingClientRect();
+  buttons.forEach(($button, index) => {
+    const $img = $button.querySelector(".experience__boton--img");
 
-  const refreshBounds = () => {
-    buttonBounds = $button.getBoundingClientRect();
-    imgBounds = $img.getBoundingClientRect();
-  };
+    // Asignar un identificador único a cada imagen
+    $img.setAttribute("data-eye-index", index);
 
-  const eye = createAnimatable(".experience__boton--img", {
-    x: 0,
-    y: 0,
-    ease: "out(4)",
+    let buttonBounds = $button.getBoundingClientRect();
+    let imgBounds = $img.getBoundingClientRect();
+
+    const refreshBounds = () => {
+      buttonBounds = $button.getBoundingClientRect();
+      imgBounds = $img.getBoundingClientRect();
+    };
+
+    const eye = createAnimatable(`[data-eye-index="${index}"]`, {
+      x: 0,
+      y: 0,
+      ease: "out(4)",
+    });
+
+    const onMouseMove = (e) => {
+      const { width, height, left, top } = buttonBounds;
+      const hw = width / 2;
+      const hh = height / 2;
+
+      const maxX = (width - imgBounds.width) / 2;
+      const maxY = (height - imgBounds.height) / 2;
+
+      const x = utils.clamp(e.clientX - left - hw, -maxX, maxX);
+      const y = utils.clamp(e.clientY - top - hh, -maxY, maxY);
+
+      eye.x(x).y(y);
+    };
+
+    window.addEventListener("mousemove", onMouseMove);
+    window.addEventListener("resize", refreshBounds);
+    window.addEventListener("scroll", refreshBounds);
   });
-
-  const onMouseMove = (e) => {
-    const { width, height, left, top } = buttonBounds;
-    const hw = width / 2;
-    const hh = height / 2;
-
-    // Máximo que puede moverse sin salirse del botón
-    const maxX = (width - imgBounds.width) / 2;
-    const maxY = (height - imgBounds.height) / 2;
-
-    const x = utils.clamp(e.clientX - left - hw, -maxX, maxX);
-    const y = utils.clamp(e.clientY - top - hh, -maxY, maxY);
-
-    eye.x(x).y(y);
-  };
-
-  window.addEventListener("mousemove", onMouseMove);
-  window.addEventListener("resize", refreshBounds);
-  window.addEventListener("scroll", refreshBounds);
 
   return (
     <section className="experience" id="xp">
@@ -77,6 +82,7 @@ const Experiences = () => {
                   <img
                     className="experience__boton--img"
                     src="/img/Ojos_anime.png"
+                    alt="Ojos Anime"
                   />
                   Ver demo
                 </button>
@@ -116,7 +122,14 @@ const Experiences = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="experience__boton--demo">Ver demo</button>
+                <button className="experience__boton--demo">
+                  <img
+                    className="experience__boton--img"
+                    src="/img/Ojos_anime.png"
+                    alt="Ojos Anime"
+                  />
+                  Ver demo
+                </button>
               </a>
             </span>
           </div>
@@ -150,7 +163,14 @@ const Experiences = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="experience__boton--demo">Ver demo</button>
+                <button className="experience__boton--demo">
+                  <img
+                    className="experience__boton--img"
+                    src="/img/Ojos_anime.png"
+                    alt="Ojos Anime"
+                  />
+                  Ver demo
+                </button>
               </a>
             </span>
           </div>
@@ -185,7 +205,14 @@ const Experiences = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="experience__boton--demo">Ver demo</button>
+                <button className="experience__boton--demo">
+                  <img
+                    className="experience__boton--img"
+                    src="/img/Ojos_anime.png"
+                    alt="Ojos Anime"
+                  />
+                  Ver demo
+                </button>
               </a>
             </span>
           </div>
