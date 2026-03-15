@@ -8,6 +8,6 @@ export default defineConfig({
     open: true, // abre el browser automáticamente con npm start
   },
   build: {
-    outDir: "build", // CRA usaba 'build', Vite usa 'dist' por defecto
+    outDir: "dist", // CRA usaba 'build', Vite usa 'dist' por defecto
   },
 });
