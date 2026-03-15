@@ -1,6 +1,70 @@
+import { animate, utils } from "https://esm.sh/animejs";
+import { useEffect, useRef } from "react";
 import "../hobbies/Hobbies.css";
 
 const Hobbies = () => {
+  const initialized = useRef(false);
+
+  useEffect(() => {
+    const handlers = [];
+
+    const init = () => {
+      if (!initialized.current) {
+        initialized.current = true;
+
+        const hobbiesIcons = utils.$(".hobbies__img");
+
+        if (!hobbiesIcons.length) return;
+
+        hobbiesIcons.forEach(($hobbies__img) => {
+          const $svg = $hobbies__img.querySelector(".hobbies__all__svg");
+
+          if (!$svg) return;
+
+          const loopAnim = animate($svg, {
+            scale: [0.5, 1],
+            alternate: true,
+            loop: true,
+            duration: 300,
+            composition: "blend",
+          });
+
+          const onEnter = () => {
+            loopAnim.pause();
+            animate($svg, {
+              scale: 1.5,
+              duration: 150,
+              composition: "blend",
+            });
+          };
+
+          const onLeave = () => {
+            animate($svg, {
+              scale: 1.0,
+              duration: 250,
+              composition: "blend",
+            });
+            loopAnim.play();
+          };
+
+          $hobbies__img.addEventListener("mouseenter", onEnter);
+          $hobbies__img.addEventListener("mouseleave", onLeave);
+
+          handlers.push({ $hobbies__img, onEnter, onLeave });
+        });
+      }
+    };
+
+    setTimeout(init, 100);
+
+    return () => {
+      handlers.forEach(({ $hobbies__img, onEnter, onLeave }) => {
+        $hobbies__img.removeEventListener("mouseenter", onEnter);
+        $hobbies__img.removeEventListener("mouseleave", onLeave);
+      });
+    };
+  }, []);
+
   return (
     <section className="hobbies" id="hobbies">
       <div className="hobbies__container">
